@@ -4,13 +4,13 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+DEVICE_PATH := device/oneplus/audi
+
 # Partitions
 BOARD_SUPER_PARTITION_SIZE := 16106127360
 
 # Include the common OEM chipset BoardConfig.
 include device/oneplus/sm8650-common/BoardConfigCommon.mk
-
-DEVICE_PATH := device/oneplus/audi
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := OP5CFBL1
