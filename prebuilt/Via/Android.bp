@@ -1,0 +1,8 @@
+android_app_import {
+	name: "Via",
+	owner: "TuYafeng",
+	apk: "Via.apk",
+	overrides: ["Browser2","Jelly"],
+	certificate: "platform",
+	dex_preopt: { enabled: true },
+}

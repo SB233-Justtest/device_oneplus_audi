@@ -1,0 +1,44 @@
+From b8ba1c18b076c447fe674c75aea2072ed051788b Mon Sep 17 00:00:00 2001
+From: ShuaiB-SB233 <105947542@qq.com>
+Date: Mon, 12 Jan 2026 16:13:01 +0800
+Subject: [PATCH] for Premium Version
+
+Change-Id: I3fa297b3be3bea2e0de809fe55f722ef532dd6e3
+---
+ target/product/handheld_product.mk | 2 --
+ target/product/handheld_system.mk  | 1 -
+ 2 files changed, 3 deletions(-)
+
+diff --git a/target/product/handheld_product.mk b/target/product/handheld_product.mk
+index ae7cbe0..73e2a28 100644
+--- a/target/product/handheld_product.mk
++++ b/target/product/handheld_product.mk
+@@ -22,13 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/media_product.mk)
+ 
+ # /product packages
+ PRODUCT_PACKAGES += \
+-    Browser2 \
+     Calendar \
+     Camera2 \
+     Contacts \
+     DeskClock \
+     Gallery2 \
+-    Music \
+     preinstalled-packages-platform-handheld-product.xml \
+     QuickSearchBox \
+     SettingsIntelligence \
+diff --git a/target/product/handheld_system.mk b/target/product/handheld_system.mk
+index 2f8cd4c..3019949 100644
+--- a/target/product/handheld_system.mk
++++ b/target/product/handheld_system.mk
+@@ -58,7 +58,6 @@ PRODUCT_PACKAGES += \
+     ManagedProvisioning \
+     MmsService \
+     MtpService \
+-    MusicFX \
+     PacProcessor \
+     preinstalled-packages-platform-handheld-system.xml \
+     PrintRecommendationService \
+-- 
+2.43.0
+

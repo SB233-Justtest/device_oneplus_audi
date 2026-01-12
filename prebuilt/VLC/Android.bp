@@ -1,0 +1,9 @@
+android_app_import {
+	name: "VLC",
+	owner: "VideoLAN",
+	apk: "VLC.apk",
+	overrides: ["Twelve","Music","MusicFX","AudioFX"],
+	certificate: "platform",
+	dex_preopt: { enabled: true },
+	optional_uses_libs: ["androidx.window.extensions", "androidx.window.sidecar"],
+}

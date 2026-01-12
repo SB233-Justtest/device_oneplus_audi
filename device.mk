@@ -61,6 +61,10 @@ PRODUCT_PACKAGES += \
     firmware_wlan_mac.bin_symlink \
     firmware_WCNSS_qcom_cfg.ini_symlink
 
+# Premium Version
+$(call inherit-product, $(LOCAL_PATH)/prebuilt/Via.mk)
+$(call inherit-product, $(LOCAL_PATH)/prebuilt/VLC.mk)
+
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/oneplus/sm8650-common/common.mk)
 

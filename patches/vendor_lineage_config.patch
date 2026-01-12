@@ -1,0 +1,36 @@
+From 513b50bae178d80f1dec3ab9cd5f9c381a38a6a7 Mon Sep 17 00:00:00 2001
+From: ShuaiB-SB233 <105947542@qq.com>
+Date: Mon, 12 Jan 2026 17:08:00 +0800
+Subject: [PATCH] for Premium Version
+
+Change-Id: I16be7f76a0f5725e4138bcfc39ca71638d501b48
+---
+ config/common_mobile_full.mk | 6 ------
+ 1 file changed, 6 deletions(-)
+
+diff --git a/config/common_mobile_full.mk b/config/common_mobile_full.mk
+index 991dbe0..faf294f 100644
+--- a/config/common_mobile_full.mk
++++ b/config/common_mobile_full.mk
+@@ -15,18 +15,12 @@ PRODUCT_PACKAGES += \
+     Profiles \
+     Recorder \
+     Seedvault \
+-    Twelve
+ 
+ ifneq ($(PRODUCT_NO_CAMERA),true)
+ PRODUCT_PACKAGES += \
+     Aperture
+ endif
+ 
+-ifneq ($(TARGET_EXCLUDES_AUDIOFX),true)
+-PRODUCT_PACKAGES += \
+-    AudioFX
+-endif
+-
+ # Extra cmdline tools
+ PRODUCT_PACKAGES += \
+     unrar \
+-- 
+2.43.0
+
